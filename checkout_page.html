@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/checkout_page.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Roboto:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Checkout</title>
+  </head>
+
+  <body>
+    <header class="checkout-header">
+      <section class="checkout-header-left">
+        <a href="index.html">
+          <img
+            class="company-pic"
+            src="images/online-shopping.jpg"
+            alt="company-picture"
+          />
+        </a>
+      </section>
+      <section class="checkout-header-middle">
+        <h1 class="checkout-header js-checkout-header">Checkout</h1>
+        <p class="shipping-fee-info">
+          Receive free standard shipping for purchases of over $50, excluding
+          taxes
+        </p>
+      </section>
+      <section class="checkout-header-right">
+        <img class="secured-pic" src="images/secure.png" alt="Secured" />
+      </section>
+    </header>
+
+    <div class="checkout-grid">
+      <div class="price-summary js-price-summary">
+        <div class="price-summary-title">Your Order Summary</div>
+        <div class="price-details">
+          <div class="price-summary-row">
+            <div class="item-quantity">Items (0):</div>
+            <div class="price-pretax">$0.00</div>
+          </div>
+          <div class="price-summary-row">
+            <div class="">Shipping Fee:</div>
+            <div class="shipping-fee">$0.00</div>
+          </div>
+          <div class="price-summary-row">
+            <div class="">Total (Pre-Tax):</div>
+            <div class="total-pre-tax">$0.00</div>
+          </div>
+          <div class="price-summary-row">
+            <div class="">Estimated Tax (12%):</div>
+            <div class="estimated-tax">$0.00</div>
+          </div>
+          <div class="line"></div>
+          <div class="price-summary-row">
+            <div class="total summary">Total:</div>
+            <div class="total-price summary">$0.00</div>
+          </div>
+          <div class="price-summary-row">
+            <button class="order-button js-order-button">
+              Place Your Order
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="items-in-cart js-items-in-cart">
+        Your cart is empty
+        <div class="js-items-in-cart">
+          <a href="index.html"
+            ><button class="view-product-button">View Products</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/item.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/checkout.js"></script>
+  </body>
+</html>

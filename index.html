@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main_page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Roboto:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>E-commerce Web</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <section class="main-header-left">
+        <div class="main-header-left-link js-jump-to-top">
+          <img
+            class="company-pic"
+            src="images/online-shopping.jpg"
+            alt="company-picture"
+          />
+        </div>
+      </section>
+      <section class="main-header-middle">
+        <input
+          class="search-bar"
+          id="search-bar"
+          type="text"
+          placeholder="Search"
+        />
+        <button class="search-button">
+          <img class="search-icon" src="images/search-icon.png" />
+        </button>
+      </section>
+      <section class="main-header-right">
+        <a class="order-history-link" href="order_history.html">
+          <span class="orders-text">Orders</span>
+        </a>
+        <a class="cart-link" id="cart-link" href="checkout_page.html">
+          <div class="parent-element">
+            <img class="cart-icon" src="images/cart.png" />
+            <div class="cart-quantity js-cart-quantity">0</div>
+          </div>
+        </a>
+      </section>
+    </header>
+
+    <div class="main">
+      <div class="js-all-items all-items"></div>
+    </div>
+
+    <script defer src="scripts/item.js"></script>
+    <script defer src="scripts/utils.js"></script>
+    <script defer src="scripts/main_page.js"></script>
+    <script defer src="scripts/search.js"></script>
+  </body>
+</html>
